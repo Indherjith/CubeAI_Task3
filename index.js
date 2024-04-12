@@ -25,7 +25,7 @@ document.querySelector('form').addEventListener('submit',async (e) => {
         document.getElementsByTagName("body")[0].style.opacity = 1;
         console.log(err);
     }
-    
+    window.location.reload();
 
 });
 
