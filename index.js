@@ -84,23 +84,24 @@ const check_Username = (uname)=>{
             }
         })
     })
+
     if(uname === null || uname === ""){
         let stat = document.getElementById("user_msg");
         stat.innerHTML ="* Invalid UserName!,  Aa-Zz & 1-10 & @ are Acceptable.";
         stat.style.color = "orangered";
-        fulname = false;
+        usename = false;
         activebtn();
         document.getElementById("uname").value = null;
         return;
     }
     if(status == false){
         let stat = document.getElementById("user_msg");
-        stat.innerHTML ="* Invalid UserName!, Aa-Zz & 1-10 & @ are Acceptable.";
+        stat.innerHTML ="* Invalid UserName!,  Aa-Zz & 1-10 & @ are Acceptable.";
         stat.style.color = "orangered";
         usename = false;
         activebtn();
         document.getElementById("uname").value = null;
-        return
+        return;
     }
     else{
         let stat = document.getElementById("user_msg");
@@ -108,7 +109,7 @@ const check_Username = (uname)=>{
         stat.style.color = "lightgreen";
         usename = true;
         activebtn();
-        return
+        return;
     }
 }
 
