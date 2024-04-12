@@ -84,6 +84,15 @@ const check_Username = (uname)=>{
             }
         })
     })
+    if(uname === null || uname === ""){
+        let stat = document.getElementById("user_msg");
+        stat.innerHTML ="* Invalid UserName!,  Aa-Zz & 1-10 & @ are Acceptable.";
+        stat.style.color = "orangered";
+        fulname = false;
+        activebtn();
+        document.getElementById("uname").value = null;
+        return;
+    }
     if(status == false){
         let stat = document.getElementById("user_msg");
         stat.innerHTML ="* Invalid UserName!, Aa-Zz & 1-10 & @ are Acceptable.";
