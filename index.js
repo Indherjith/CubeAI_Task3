@@ -65,8 +65,7 @@ const check_Fullname = (fname)=>{
     }
     else{
         let stat = document.getElementById("full_msg");
-        stat.innerHTML ="* Validation Success 🗸🗸";
-        stat.style.color = "lightgreen";
+        stat.innerHTML ="";
         fulname = true;
         activebtn();
         return;
@@ -105,7 +104,7 @@ const check_Username = (uname)=>{
     }
     else{
         let stat = document.getElementById("user_msg");
-        stat.innerHTML ="* Validation Success 🗸🗸";
+        stat.innerHTML ="";
         stat.style.color = "lightgreen";
         usename = true;
         activebtn();
@@ -142,8 +141,7 @@ const check_password = (pass)=>{
         }
         else{
             let stat = document.getElementById("pass_msg");
-            stat.innerHTML ="* Validation Success 🗸🗸";
-            stat.style.color = "lightgreen";
+            stat.innerHTML ="";
             pasword = true;
             activebtn();
             return
@@ -173,8 +171,7 @@ const check_confirmpassword=(pass)=>{
     }
     else{
         let stat = document.getElementById("cpass_msg");
-        stat.innerHTML ="* Validation Success 🗸🗸";
-        stat.style.color = "lightgreen";
+        stat.innerHTML ="";
         conpasword = true;
         activebtn();
         return
@@ -186,8 +183,7 @@ function check_mail(mail)
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
   {
     let stat = document.getElementById("mail_msg");
-    stat.innerHTML ="* Validation Success 🗸🗸";
-    stat.style.color = "lightgreen";
+    stat.innerHTML ="";
     mai = true;
     activebtn();
     return;
@@ -205,8 +201,7 @@ function check_contact(num){
     const status = /^\d{10}$/.test(num);
     if(status){
         let stat = document.getElementById("contact_msg");
-        stat.innerHTML ="* Validation Success 🗸🗸";
-        stat.style.color = "lightgreen";
+        stat.innerHTML ="";
         cont = true;
         activebtn();
         return;
@@ -225,8 +220,7 @@ function check_contact(num){
 function check_gender(e){
     gen = true;
     let stat = document.getElementById("gender_msg");
-    stat.innerHTML ="* Validation Success 🗸🗸";
-    stat.style.color = "lightgreen";
+    stat.innerHTML ="";
     activebtn();
     return;
 }
