@@ -100,6 +100,7 @@ const check_Username = (uname)=>{
         usename = false;
         activebtn();
         document.getElementById("uname").value = null;
+        return
     }
     else{
         let stat = document.getElementById("user_msg");
@@ -107,6 +108,7 @@ const check_Username = (uname)=>{
         stat.style.color = "lightgreen";
         usename = true;
         activebtn();
+        return
     }
 }
 
@@ -135,6 +137,7 @@ const check_password = (pass)=>{
             pasword = false;
             activebtn();
             document.getElementById("pass").value = null;
+            return
         }
         else{
             let stat = document.getElementById("pass_msg");
@@ -142,6 +145,7 @@ const check_password = (pass)=>{
             stat.style.color = "lightgreen";
             pasword = true;
             activebtn();
+            return
         }
     }
     else{
@@ -151,6 +155,7 @@ const check_password = (pass)=>{
             document.getElementById("pass").value = null;
             pasword = false;
             activebtn();
+            return
     }
 }
 
@@ -163,6 +168,7 @@ const check_confirmpassword=(pass)=>{
         conpasword = false;
         activebtn();
         document.getElementById("conpass").value = null;
+        return
     }
     else{
         let stat = document.getElementById("cpass_msg");
@@ -170,6 +176,7 @@ const check_confirmpassword=(pass)=>{
         stat.style.color = "lightgreen";
         conpasword = true;
         activebtn();
+        return
     }
 }
 
@@ -190,6 +197,7 @@ function check_mail(mail)
     mai = false;
     activebtn();
     document.getElementById("mail").value = null;
+    return
 }
 
 function check_contact(num){
@@ -209,6 +217,7 @@ function check_contact(num){
         cont = false;
         activebtn();
         document.getElementById("contact").value = null;
+        return
     }
 }
 
