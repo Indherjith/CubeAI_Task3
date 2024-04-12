@@ -23,6 +23,7 @@ document.querySelector('form').addEventListener('submit',async (e) => {
     }
     catch(err){
         document.getElementsByTagName("body")[0].style.opacity = 1;
+        alert("Something went wrong! Try Again.")
         console.log(err);
     }
     window.location.reload();
